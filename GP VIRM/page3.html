@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<title>
+		
+	</title>
+</head>
+<body>
+<nav class="navbar navbar-default" >
+  <div class="container-fluid">
+    <div class="navbar-header" id="nav1">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav text-center" id="nav2">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="page1.html" >A propos</a></li>
+        <li><a href="page2.html">Projets</a></li>
+        <li><a href="page3.html">Contact</a></li>
+      </ul>
+      <div class="navbar-right">
+         <img src="./assets/img/logo.jpg" id="logo">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-4 col-lg-4 pull-left">
+      <span class="glyphicon glyphicon-user gl"></span><br>
+      <h3>Merci pour votre Contact</h3>               
+            </div>
+
+            <div class="col-xs-4 col-lg-4 haha ">
+      
+                <h3 id="env" class="text-center">Envoyez nous une message</h3>
+                <form name="sentMessage" id="contactForm"  METHOD="post" action="">
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Votre nom</label>
+                            <input type="text" class="form-control" name="name" required data-validation-required-message="Please enter your name.">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Telephone:</label>
+                            <input type="tel" class="form-control" name="phone" required data-validation-required-message="Please enter your phone number.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Email:</label>
+                            <input type="email" class="form-control" name="email" required data-validation-required-message="Please enter your email address.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Message:</label>
+                            <textarea rows="10" cols="100" class="form-control" name="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <input type="submit" class="btn btn-primary text-center" value='Envoyer' id="btn" >
+                </form>
+            </div>
+
+             <div class="col-xs-4 col-lg-4">
+               <span class="glyphicon glyphicon-send gl"></span><br><br>
+              <a href="http://www.facebook.com/ismael.horlando"> <img src="./assets/img/fb.jpg" class="logo"></a>
+              <a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="./assets/img/gm.png" class="logo"></a>
+              <a href="https://twitter.com/"><img src="./assets/img/tw.jpg" class="logo"></a>
+            </div>
+
+
+
+          </div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+<footer class="footer-basic-centered">
+
+      <p class="footer-company-motto">Le groupe VIRM</p>
+
+      <p class="footer-links">
+        Merci de votre visiter sur notre Portfolio
+      </p>
+
+      <p class="footer-company-name"> &copy;Octobre 2017</p>
+    <a href="#nav1"><span class="glyphicon glyphicon-arrow-up"></span></a>
+    </footer>
+</html>
